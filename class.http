@@ -1,0 +1,23 @@
+@api=http://localhost:5000
+
+
+GET {{api}}/class
+
+###
+GET {{api}}/class/1
+
+###
+POST {{api}}/class
+Content-Type: application/json
+
+{
+    "url": "https://www.youtube.com/watch?v=c8Rert2FQnU",
+    "title": "Hobbit vs ruzzarin",
+    "description": "pelea de inválidos"
+}
+
+###
+DELETE {{api}}/class/1
+
+###
+PUT {{api}}/class/1

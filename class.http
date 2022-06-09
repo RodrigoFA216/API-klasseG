@@ -4,16 +4,24 @@
 GET {{api}}/class
 
 ###
-GET {{api}}/class/1
+GET {{api}}/class/62a2315ed59a50886dab57dc
 
 ###
 POST {{api}}/class
 Content-Type: application/json
 
+# {
+#     "_id": "62a2315ed59a50886dab57dc",
+#     "title": "Hobbit vs ruzzarin",
+#     "description": "pelea de inválidos",
+#     "url": "https://www.youtube.com/watch?v=c8Rert2FQnU",
+#     "createdAt": "2022-06-09T17:43:58.680Z",
+#     "updatedAt": "2022-06-09T17:43:58.680Z"
+#   },
 {
-    "url": "https://www.youtube.com/watch?v=c8Rert2FQnU",
-    "title": "Hobbit vs ruzzarin",
-    "description": "pelea de inválidos"
+    "url": "https://www.youtube.com/watch?v=gsZc-JQGiPc",
+    "title": "Perseguido por paparatzzis - Cosas",
+    "description": "debate de inútiles"
 }
 
 ###
@@ -21,3 +29,8 @@ DELETE {{api}}/class/1
 
 ###
 PUT {{api}}/class/1
+Content-Type: application/json
+
+{
+    "title": "Titulo actualizado"
+}
